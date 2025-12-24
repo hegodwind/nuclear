@@ -1,4 +1,0 @@
-scipy
-plotly
-matplotlib
-tqdm
