@@ -9,7 +9,8 @@ import matplotlib.pyplot as plt
 from scipy.sparse import lil_matrix, csr_matrix, eye, isspmatrix
 from scipy.sparse.linalg import spsolve, expm as sparse_expm
 from scipy.linalg import expm as dense_expm
-
+import pandas as pd
+import plotly.graph_objects as go
 
 # ==========================================
 # 1. 后端逻辑 
@@ -305,16 +306,6 @@ def run_simulation(mode, target_value, days, steps, N_initial, factory, solver, 
     return np.array(results), time_points, flux_history
 
 
-import streamlit as st
-import numpy as np
-import pandas as pd
-import plotly.express as px
-import plotly.graph_objects as go
-from scipy.sparse import lil_matrix, csr_matrix, eye
-from scipy.sparse.linalg import spsolve
-from scipy.linalg import expm
-
-
 
 
 class SimulationEngine:
@@ -533,3 +524,4 @@ if run_btn:
 else:
 
     st.info("👈 请在左侧调整参数，然后点击“开始计算”")
+
