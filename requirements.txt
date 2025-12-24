@@ -1,7 +1,7 @@
 streamlit
 numpy
 pandas
-pip install scipy
-pip install plotly
-pip install matplotlib
+scipy
+plotly
+matplotlib
 
