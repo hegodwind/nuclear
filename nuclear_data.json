@@ -1,0 +1,133 @@
+{
+  "capture_topology": {
+    "U235": "U236",
+    "U236": "U237",
+    "U238": "U239",
+    "U239": "Np239",
+    "Np239": "Pu239",
+    "Pu239": "Pu240",
+    "Pu240": "Pu241",
+    "Pu241": "Pu242",
+    "Pu242": "Pu243",
+    "Am241": "Am242",
+    "I135": "Xe136",
+    "Xe135": "Xe136",
+    "Pm149": "Sm150",
+    "Sm149": "Sm150"
+  },
+  "decay_topology": {
+    "U239": "Np239",
+    "Np239": "Pu239",
+    "Pu241": "Am241",
+    "I135": "Xe135",
+    "Pm149": "Sm149",
+    "Mo99": "Tc99",
+    "Ba140": "La140"
+  },
+  "nuclides": {
+    "U235": {
+    "decay_constant": 3.12e-17,
+    "sigma_capture": 98.7,
+    "sigma_fission": 582.2,
+    "fission_yields": { "I135": 0.0639, "Pm149": 0.0107, "Cs137": 0.0618, "Nd148": 0.0167 }
+  },
+  "U236": {
+    "decay_constant": 9.24e-16,
+    "sigma_capture": 5.1,
+    "sigma_fission": 0.0
+  },
+  "U238": {
+    "decay_constant": 5.00e-18,
+    "sigma_capture": 2.72,
+    "sigma_fission": 0.0,
+    "fission_yields": { "I135": 0.0628, "Pm149": 0.0142, "Cs137": 0.0615 }
+  },
+  "U239": {
+    "decay_constant": 4.91e-4,
+    "sigma_capture": 0.0,
+    "sigma_fission": 0.0
+  },
+  "Np239": {
+    "decay_constant": 3.41e-6,
+    "sigma_capture": 77.0,
+    "sigma_fission": 0.0
+  },
+  "Pu239": {
+    "decay_constant": 8.90e-13,
+    "sigma_capture": 270.3,
+    "sigma_fission": 748.1,
+    "fission_yields": { "I135": 0.0604, "Pm149": 0.0121, "Cs137": 0.0661, "Nd148": 0.0164 }
+  },
+  "Pu240": {
+    "decay_constant": 3.33e-12,
+    "sigma_capture": 289.5,
+    "sigma_fission": 0.0
+  },
+  "Pu241": {
+    "decay_constant": 1.53e-9,
+    "sigma_capture": 361.8,
+    "sigma_fission": 1011.0,
+    "fission_yields": { "I135": 0.0681, "Pm149": 0.0145 }
+  },
+  "Pu242": {
+    "decay_constant": 5.86e-14,
+    "sigma_capture": 18.5,
+    "sigma_fission": 0.0
+  },
+  "Am241": {
+    "decay_constant": 5.08e-11,
+    "sigma_capture": 68.4,
+    "sigma_fission": 0.0
+  },
+  "I135": {
+    "decay_constant": 2.93e-5,
+    "sigma_capture": 6.7,
+    "sigma_fission": 0.0
+  },
+  "Xe135": {
+    "decay_constant": 2.11e-5,
+    "sigma_capture": 2.65e6,
+    "sigma_fission": 0.0
+  },
+  "Pm149": {
+    "decay_constant": 3.56e-6,
+    "sigma_capture": 1400.0,
+    "sigma_fission": 0.0
+  },
+  "Sm149": {
+    "decay_constant": 0.0,
+    "sigma_capture": 40140.0,
+    "sigma_fission": 0.0
+  },
+  "Cs137": {
+    "decay_constant": 7.32e-10,
+    "sigma_capture": 0.11,
+    "sigma_fission": 0.0
+  },
+  "Nd148": {
+    "decay_constant": 0.0,
+    "sigma_capture": 2.5,
+    "sigma_fission": 0.0
+  },
+  "Mo99": {
+    "decay_constant": 2.92e-6,
+    "sigma_capture": 0.1,
+    "sigma_fission": 0.0
+  },
+  "Tc99": {
+    "decay_constant": 1.04e-13,
+    "sigma_capture": 20.0,
+    "sigma_fission": 0.0
+  },
+  "Xe134": {
+    "decay_constant": 0.0,
+    "sigma_capture": 0.2,
+    "sigma_fission": 0.0
+  },
+  "Ba140": {
+      "decay_constant": 6.28e-7,
+      "sigma_capture": 0.4,
+      "sigma_fission": 0.0
+    }
+  }
+}
