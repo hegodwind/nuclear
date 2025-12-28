@@ -447,7 +447,7 @@ with st.sidebar:
         flux_input = st.number_input("热中子通量 (n/cm²/s)", value=3.0e13, format="%.2e")
         power_density = None
     else:
-        power_density = st.number_input("功率密度 (W/cm³)", value=35.0, step=1.0)
+        power_density = st.number_input("功率密度 (W/cm³)", value=35.0, step=10.0)
         flux_input = None
 
     st.subheader("3. 时间设置")
@@ -622,4 +622,5 @@ if run_btn:
     st.download_button("下载计算结果 (CSV)", csv, "burnup_results.csv", "text/csv")
 
 else:
+
     st.info("👈 请在左侧调整参数，然后点击“开始计算”")
