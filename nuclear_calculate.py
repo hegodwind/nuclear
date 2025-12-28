@@ -404,7 +404,7 @@ def run_simulation(mode, target_value, days, steps, N_initial, factory, solver, 
     return np.array(results), time_points, flux_history
 
 class SimulationEngine:
-    def __init__(self, library_source, solver_method='scipy_expm', steps=1):  
+    def __init__(self, library_source, solver_method='scipy_expm', steps=10):  
         self.library = NuclearLibrary(json_source=library_source)
         self.factory = BurnupMatrixFactory(self.library)
         self.solver = SimpleSolver(method=solver_method)
@@ -624,3 +624,4 @@ if run_btn:
 else:
 
     st.info("👈 请在左侧调整参数，然后点击“开始计算”")
+
