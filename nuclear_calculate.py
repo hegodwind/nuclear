@@ -453,7 +453,7 @@ with st.sidebar:
     st.subheader("3. 时间设置")
     total_days = st.number_input("运行天数", value=300)
     steps = st.slider("计算步数 (Steps)", 10, 200, 50)
-    inner_steps = st.number_input("每步内部分割数 (Inner Steps)", value=1, min_value=1, max_value=100)
+    inner_steps = st.number_input("每步内部分割数 (Inner Steps)", value=10, min_value=1, max_value=100)
     
     st.subheader("4. 求解器设置")
     solver_option = st.selectbox(
@@ -624,4 +624,5 @@ if run_btn:
 else:
 
     st.info("👈 请在左侧调整参数，然后点击“开始计算”")
+
 
